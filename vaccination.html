@@ -9,23 +9,37 @@
 </head>
 <body>
 
-    <nav>
-        <div class="nav_container">
-          <div class="nav_content">
+  <nav>
+    <div class="nav_container">
+        <div class="nav_content">
             <img class="logo" src="img/kv.svg" alt="">
             <ul class="nav_links">
-              <li><a class="link" href="signup.html">Home</a></li>
-              <li><a class="link active_link" href="vaccination.html">Vaccinations</a></li>
-              <li><a class="link" href="#">Hospitals</a></li>
-              <li><a href="#">Search</a></li>
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link active_link" href="vaccination.html">Vaccinations</a></li>
+            <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
+                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Private Hospitals</a>
+                    <div class="hospitals_border"></div>
+                    <a href="#">Public Hospitals</a>
+                </div>
+            </li>
+            <li><a id="myBtn" href="#">Search</a></li>
             </ul>
             <ul class="authorize">
                 <li class="authorize_login"><a href="">Log In</a></li>
                 <li class="authorize_signup"><a href="">Sign Up</a></li>
             </ul>
-          </div>
         </div>
-    </nav>
+
+        <div id="myModal" class="modal">
+            <div class="modal_content">
+                <i class="fa fa-search"></i>
+                <input class="search" type="text" placeholder="Search With Keywords">
+            </div>
+        </div>
+    </div>
+</nav>
 
     <div class="ren_container">
         <h1 class="vaccination_title">VACCINATIONS</h1>
