@@ -4,17 +4,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #E5E5E5;
 }
-
-.container {
-    background: rgba(128, 128, 128, 0.507);
-    height: 88vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay {
+.signup_overlay {
     font-family: 'Poppins', sans-serif;
     background: #fff;
     border-radius: 25px;
@@ -44,13 +36,13 @@ h1 {
     padding: 0 35px 0 50px;
 }
 
-label {
+.label {
     font-size: 12px;
     color:#08517A;
     font-weight: 500;
 }
 
-input {
+.input {
     margin-top: 5px;
     margin-bottom: 16px;
     height: 28px;
@@ -82,7 +74,7 @@ input {
     padding-bottom: 5px;
 }
 
-button {
+.signup_button {
     background: #DA8F06;
     height: 29px;
     width: 241px;
@@ -102,21 +94,21 @@ h2 {
     text-align:center; 
     border-bottom: 1px solid #E8E8E8; 
     line-height:0.1em; 
-    margin:0 0 5px;
+    margin: 0.5rem 0 0.1rem;
     margin-left: 30%;
 } 
 
 h2 span { 
     background:#fff; 
-    padding:0 10px; 
+    padding: 0 10px; 
 }
 
-h3 {
+.alternate_signup {
     font-weight: 400;
     font-size: 12px;
     color: #08517A;
     text-align: center;
-    margin: 10px 0 8px;
+    margin: 9px 0 5px 0;
 }
 
 .signup_options {
@@ -124,6 +116,7 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin: 0 0 5px 0;
 }
 
 .box {
@@ -138,12 +131,11 @@ h3 {
     height: 20px;
     vertical-align: middle;
     position: relative;
-    top: 20%;
     right: -15%;
     cursor: pointer;
 }
 
-p {
+.signup_options + p {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
